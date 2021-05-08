@@ -11,6 +11,29 @@ public class MovementController : MonoBehaviour
 
     public GameObject head = null;
 
+    [SerializeField]
+    TeleportationProvider teleportationProvider;
+    public GameObject MainVRPlayer;
+    public GameObject XRRigGameobject;
+
+    private void OnEnabled()
+    {
+        teleportationProvider.endLocomotion += OnEndLocomotion;
+    }
+
+    private void OnDisabled()
+    {
+        teleportationProvider.endLocomotion -= OnEndLocomotion;
+
+    }
+
+    void OnEndLocomotion(LocomotionSystem locomotionSystem)
+    {
+        Debug.Log("Teleportation is ended");
+        MainVRPlayer.transform.position = MainVRPlayer.transform.TransformPoint(XRRigGameobject.transform.localPosition);
+        XRRigGameobject.transform.localPosition = Vector3.zero;
+    }
+
     void Update()
     {
 
