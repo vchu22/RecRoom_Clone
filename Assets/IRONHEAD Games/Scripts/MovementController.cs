@@ -39,10 +39,12 @@ public class MovementController : MonoBehaviour
 
         foreach (XRController xRController in controllers)
         {
+            Debug.Log(xRController.inputDevice.name);
             if (xRController.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxis,out Vector2 positionVector))
             {
                 if (positionVector.magnitude > 0.15f)
                 {
+                    Debug.Log(positionVector);
                     Move(positionVector);
                 }
                 
