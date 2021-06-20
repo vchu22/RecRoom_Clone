@@ -20,7 +20,13 @@ public class LoginManager : MonoBehaviourPunCallbacks
     }
     #endregion
 
-    #region  Photon Callback Methods
+    #region UI Callback Methods
+    public void ConnectToPhotonServer(){
+        PhotonNetwork.ConnectUsingSettings();
+    }
+    #endregion
+
+    #region Photon Callback Methods
     public override void OnConnected()
     {
         Debug.Log("OnConnected is called. The server is available.");
