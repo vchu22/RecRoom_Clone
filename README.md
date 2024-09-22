@@ -1,6 +1,6 @@
-# Multiplayer VR Dev
+# RecRoom Clone
 
-Following the tutorial: [Multiplayer Virtual Reality (VR) Development With Unity](https://www.udemy.com/course/multiplayer-virtual-reality-vr-development-with-unity/)
+Following this tutorial to create a RecRoom-like Multiplayer VR game: [Multiplayer Virtual Reality (VR) Development With Unity](https://www.udemy.com/course/multiplayer-virtual-reality-vr-development-with-unity/)
 
 ## Tech Stack
 - [Unity3D](https://unity.com/)
