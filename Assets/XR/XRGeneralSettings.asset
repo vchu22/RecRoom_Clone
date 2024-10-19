@@ -33,6 +33,24 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders:
   - {fileID: 11400000, guid: 04d75cef4083d6b4082966d16b18e49c, type: 2}
+--- !u!114 &-6448199695385358175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: 04d75cef4083d6b4082966d16b18e49c, type: 2}
+  - {fileID: 11400000, guid: f976118cfb0fcffddb95a40d536764ea, type: 2}
 --- !u!114 &-4582227038392909525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,5 +93,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: -6874613319934450025}
+  m_LoaderManagerInstance: {fileID: -6448199695385358175}
   m_InitManagerOnStart: 1
